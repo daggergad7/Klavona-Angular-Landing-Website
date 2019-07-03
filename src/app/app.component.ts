@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgxSmartModalService } from 'ngx-smart-modal';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public show:boolean = false;
   title = 'klavona';
+
+  constructor(public ngxSmartModalService: NgxSmartModalService) {
+  }
 }

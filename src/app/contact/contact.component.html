@@ -1,0 +1,44 @@
+<ngx-smart-modal #myModal identifier="myModal">
+
+<div class="contact-us">
+        <div class="title">
+          <h1>Contact us</h1>
+        </div>
+        <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    
+          <div class="form-items">
+            <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+    
+            <input type="text" class="input" name="fname" #fname="ngModel" [(ngModel)]="service.formData.fname" placeholder="Full name">
+
+          </div>
+          <div class="form-items">
+            <input type="text" class="input" name="email" #email="ngModel" [(ngModel)]="service.formData.email" placeholder="Email">
+          </div>
+          <div class="form-items">
+            <textarea class="input message" cols="30" rows="10" name="note" #note="ngModel" [(ngModel)]="service.formData.note" placeholder="Message....."></textarea>
+          </div>
+          <button type="submit" class="btn" (click)="myModal.close()">SUBMIT</button>
+    y
+        </form>
+          <!-- Submit -->
+    
+        
+        
+        <!-- <div class="social-icons">
+          <div class="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="twitter">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="google">
+            <i class="fab fa-google-plus-g"></i>
+          </div>
+        </div> -->
+        
+      </div>
+      
+        
+          <!-- <button (click)="myModal.close()">Close</button> -->
+</ngx-smart-modal>
