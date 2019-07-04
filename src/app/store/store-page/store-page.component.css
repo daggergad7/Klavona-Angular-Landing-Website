@@ -113,7 +113,9 @@ html, body {
         position: fixed;
         width: 100%;
         line-height: 50px;
-        z-index: 100;
+		z-index: 100;
+		background: #0f0f0f;
+		
   }
   
   nav ul {
@@ -678,7 +680,8 @@ html, body {
 /*	position: absolute;*/
 /*	left: 340px;*/
 	top: 180px;
-    padding: 15px;
+	padding: 15px;
+	margin-left: -50px;
     display: flex;
     flex-flow: row wrap;
     margin-top:100px;
@@ -806,7 +809,7 @@ div.large .make3D{
 .stats-container{
 	background:#fff;	
 	position:absolute;
-	top:382px;
+	top:392px;
 	left:0;
 	width: 252px;
 	height: 300px;
@@ -1435,6 +1438,36 @@ div.sku strong{
   /* cart end */
 
   .storefinal1{
-      padding-left: 100px;
-      padding-top: 100px;
+      padding-left: 50px;
+      padding-top: 50px;
   }
+
+  /* container s */
+
+  
+#wrapperss {
+	width: 50%;
+	margin: 20px auto;
+	background-color: #1abc9c;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+#leftss,
+#mainss,
+#rightss {
+	flex: 1;
+	margin: 5px;
+}
+
+.blockss {
+	background-color: #fff;
+	width: 100%;
+	height: 200px;
+	border-radius: 5px;
+	margin:10px;
+	
+}
+
