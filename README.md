@@ -1,6 +1,8 @@
 # Klavona
 
-See it live at : (klavona.com)
+See it live at [klavona.com](https://klavona.com/).
+
+
 
 ## This repository contains source code for the official klavona website.
 
